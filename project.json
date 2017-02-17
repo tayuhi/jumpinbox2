@@ -1,0 +1,26 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 0,
+    "showFPS" : false,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"",
+
+    "modules" : ["cocos2d","external"],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/app.js",
+        "src/title.js",
+        "src/win.js",
+        "src/lose.js",
+        "src/stage1.js",
+        "src/stageselect.js",
+        "src/stage2.js",
+        "src/tiledmap.js",
+        "src/stage4.js",
+        "src/stage5.js"
+    ]
+}
