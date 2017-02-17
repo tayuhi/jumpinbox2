@@ -93,7 +93,7 @@ var gameScene4 = cc.Scene.extend({
         missText3.setPosition(250, 650);
         missText3.setScale(0.7);
         //ステジ回数
-        missText = cc.LabelTTF.create("ステージ2", "Arial", "26", cc.TEXT_ALIGNMENT_CENTER);
+        missText = cc.LabelTTF.create("ステージ4", "Arial", "26", cc.TEXT_ALIGNMENT_CENTER);
         this.addChild(missText, 1);
         missText.setPosition(400, 650);
         missText.setScale(0.7);
