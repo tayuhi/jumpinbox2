@@ -4,9 +4,9 @@ cc.game.onStart = function(){
 
     cc.view.enableRetina(false);
     cc.view.adjustViewPort(true);
-    var policy = new cc.ResolutionPolicy(cc.ContainerStrategy.ORIGINAL_CONTAINER, cc.ContentStrategy.SHOW_ALL)
-    cc.view.setDesignResolutionSize(800, 750, policy);
-    cc.view.resizeWithBrowserSize(false);
+    var gamenookisa = new cc.ResolutionPolicy(cc.ContainerStrategy.ORIGINAL_CONTAINER, cc.ContentStrategy.EXACT_FIT)
+    cc.view.setDesignResolutionSize(880, 720, gamenookisa);
+    cc.view.resizeWithBrowserSize(true);
     cc.LoaderScene.preload(g_resources, function () {
         cc.director.runScene(new FirstScene());
     }, this);
