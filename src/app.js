@@ -82,6 +82,7 @@ var gameScene1 = cc.Scene.extend({
             audioEngine.playMusic("res/yuki.mp3", true);
             //audioEngine.playMusic(res.kurisutarubgm, true);
         }
+
         //矢印移動はじ
         var size = cc.director.getWinSize();
 
