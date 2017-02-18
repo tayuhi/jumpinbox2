@@ -4,8 +4,9 @@ cc.game.onStart = function(){
 
     cc.view.enableRetina(false);
     cc.view.adjustViewPort(true);
-    cc.view.setDesignResolutionSize(880, 320, cc.ResolutionPolicy.SHOW_ALL);
-    cc.view.resizeWithBrowserSize(true);
+    var policy = new cc.ResolutionPolicy(cc.ContainerStrategy.ORIGINAL_CONTAINER, cc.ContentStrategy.SHOW_ALL)
+    cc.view.setDesignResolutionSize(800, 750, policy);
+    cc.view.resizeWithBrowserSize(false);
     cc.LoaderScene.preload(g_resources, function () {
         cc.director.runScene(new FirstScene());
     }, this);
